@@ -238,6 +238,30 @@ class BuzzerRequest {
     public String toString() {
         return "BuzzerRequest{roomId=" + roomId + ", playerId=" + playerId + ", questionId=" + questionId + "}";
     }
+
+    public String getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(String roomId) {
+        this.roomId = roomId;
+    }
+
+    public String getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(String playerId) {
+        this.playerId = playerId;
+    }
+
+    public String getQuestionId() {
+        return questionId;
+    }
+
+    public void setQuestionId(String questionId) {
+        this.questionId = questionId;
+    }
 }
 
 /**
@@ -256,6 +280,30 @@ class JoinRoomRequest {
     public String toString() {
         return "JoinRoomRequest{room=" + roomID + ", player=" + player + "}";
     }
+
+    public String getRoomID() {
+        return roomID;
+    }
+
+    public void setRoomID(String roomID) {
+        this.roomID = roomID;
+    }
+
+    public String getRoomPassword() {
+        return roomPassword;
+    }
+
+    public void setRoomPassword(String roomPassword) {
+        this.roomPassword = roomPassword;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 }
 
 /**
@@ -268,6 +316,22 @@ class ExitRoomRequest {
     private Player player;
 
     public ExitRoomRequest() {}
+
+    public String getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(String roomId) {
+        this.roomId = roomId;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 
     @Override
     public String toString() {

@@ -30,8 +30,59 @@ public class Room {
         return host.getId();
     }
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
+    public String getRoomNumber() {
+        return roomNumber;
+    }
 
+    public void setRoomNumber(String roomNumber) {
+        this.roomNumber = roomNumber;
+    }
 
+    public String getRoomPassword() {
+        return roomPassword;
+    }
+
+    public void setRoomPassword(String roomPassword) {
+        this.roomPassword = roomPassword;
+    }
+
+    public boolean isBuzzingOpen() {
+        return buzzingOpen;
+    }
+
+    public void setBuzzingOpen(boolean buzzingOpen) {
+        this.buzzingOpen = buzzingOpen;
+    }
+
+    public String getFirstBuzzer() {
+        return firstBuzzer;
+    }
+
+    public void setFirstBuzzer(String firstBuzzer) {
+        this.firstBuzzer = firstBuzzer;
+    }
+
+    public String getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public void setCurrentQuestion(String currentQuestion) {
+        this.currentQuestion = currentQuestion;
+    }
+
+    public Player getHost() {
+        return host;
+    }
+
+    public void setHost(Player host) {
+        this.host = host;
+    }
 }

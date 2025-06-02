@@ -25621,7 +25621,7 @@ s=p}while(true)switch(s){case 0:p=4
 n=A.ri(null)
 g=t.z
 s=7
-return A.P(n.alr("http://localhost:8080/game/rooms/"+b+"/nextQuestion",A.al(["currentQuestionId",c],t.N,g),g),$async$apq)
+return A.P(n.alr("/game/rooms/"+b+"/nextQuestion",A.al(["currentQuestionId",c],t.N,g),g),$async$apq)
 case 7:m=a1
 if(m.c===200){l=m.a
 k=J.hZ(l,"questionId")
@@ -25660,7 +25660,7 @@ s=q}while(true)switch(s){case 0:q=3
 o=A.ri(null)
 j=t.N
 s=6
-return A.P(o.un("http://localhost:8080/game/FirstBuzzer",A.al(["roomId",b,"playerId",c],j,j),t.z),$async$aoW)
+return A.P(o.un("/game/FirstBuzzer",A.al(["roomId",b,"playerId",c],j,j),t.z),$async$aoW)
 case 6:n=e
 if(n.c===200)A.eM("First buzzer set successfully for player: "+c+" in room: "+b)
 else{m=n.a
@@ -25689,7 +25689,7 @@ s=q}while(true)switch(s){case 0:q=3
 o=A.ri(null)
 j=t.N
 s=6
-return A.P(o.un("http://localhost:8080/game/resetBuzzing",A.al(["roomId",b,"questionId",c],j,j),t.z),$async$apw)
+return A.P(o.un("/game/resetBuzzing",A.al(["roomId",b,"questionId",c],j,j),t.z),$async$apw)
 case 6:n=e
 if(n.c===200)A.eM("Buzzer reset successfully for room: "+b)
 else{m=n.a
@@ -25718,7 +25718,7 @@ s=q}while(true)switch(s){case 0:q=3
 o=A.ri(null)
 j=t.N
 s=6
-return A.P(o.un("http://localhost:8080/game/cancelBuzzing",A.al(["roomId",b,"questionId",c],j,j),t.z),$async$aow)
+return A.P(o.un("/game/cancelBuzzing",A.al(["roomId",b,"questionId",c],j,j),t.z),$async$aow)
 case 6:n=e
 if(n.c===200)A.eM("Buzzing cancelled successfully for room: "+b)
 else{m=n.a
@@ -81074,7 +81074,7 @@ f=A.d2(o,20,o)
 return A.ax3(o,B.k,A.lG(A.j6(A.b([n,l,k,j,i,g,q,r,s,m,f,A.d2(new A.J8(new A.acQ(3,5,5,1),new A.Mt(new A.ajC(p),6,!0,!0,!0,o),o,B.aJ,!1,o,o,B.z6,!1,o,6,B.ac,B.x4,o,B.z,B.al,o),270,400)],h),B.ak,B.ae,B.bu),o,o))},
 vN(){var s=0,r=A.I(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$vN=A.J(function(a0,a1){if(a0===1){o.push(a1)
-s=p}while(true)switch(s){case 0:f="http://localhost:8080/game/joinRoom"
+s=p}while(true)switch(s){case 0:f="/game/joinRoom"
 e=n.e.a.a
 d=n.f.a.a
 c=n.r.a.a
@@ -81113,7 +81113,7 @@ case 2:return A.F(o.at(-1),r)}})
 return A.H($async$vN,r)},
 vG(){var s=0,r=A.I(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$vG=A.J(function(a0,a1){if(a0===1){o.push(a1)
-s=p}while(true)switch(s){case 0:f="http://localhost:8080/game/createRoom"
+s=p}while(true)switch(s){case 0:f="/game/createRoom"
 e=n.e.a.a
 d=n.f.a.a
 c=n.r.a.a
@@ -81175,7 +81175,7 @@ var $async$vO=A.J(function(a,b){if(a===1){p.push(b)
 s=q}while(true)switch(s){case 0:q=3
 n=A.ri(null)
 s=6
-return A.P(n.alq("http://localhost:8080/game/final/"+o.a.c,t.z),$async$vO)
+return A.P(n.alq("game/final/"+o.a.c,t.z),$async$vO)
 case 6:m=b
 if(m.c===200){l=m.a
 if(J.d(J.hZ(l,"status"),"success")){j=o.c

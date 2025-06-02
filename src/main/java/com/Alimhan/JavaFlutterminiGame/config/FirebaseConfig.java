@@ -16,7 +16,7 @@ public class FirebaseConfig {
         try {
             if (FirebaseApp.getApps().isEmpty()) {
                 InputStream serviceAccount =
-                        getClass().getClassLoader().getResourceAsStream("test-6f84f-firebase-adminsdk-fbsvc-122a2009f5.json");
+                        getClass().getClassLoader().getResourceAsStream("test-6f84f-firebase-adminsdk-fbsvc-01b24894f4.json");
 
                 if (serviceAccount == null) {
                     throw new IllegalStateException("⚠️ Firebase credentials file not found");
